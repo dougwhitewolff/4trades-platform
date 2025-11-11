@@ -204,6 +204,11 @@ section {
     color: var(--pure-white);
 }
 
+.nav-logo .logo-image {
+    height: 40px;
+    width: auto;
+}
+
 .logo-icon {
     font-size: 28px;
 }
@@ -266,7 +271,9 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
-    background: linear-gradient(135deg, var(--charcoal-black) 0%, var(--dark-gray) 100%);
+    background: linear-gradient(135deg, var(--charcoal-black) 0%, var(--dark-gray) 100%),
+                url('../assets/photos/Onsite_Workers.png') center/cover no-repeat;
+    background-blend-mode: overlay;
     text-align: center;
     padding: 120px 24px 80px;
     overflow: hidden;
@@ -703,6 +710,11 @@ section {
     font-weight: 700;
     color: var(--pure-white);
     margin-bottom: 16px;
+}
+
+.footer-logo .logo-image {
+    height: 50px;
+    width: auto;
 }
 
 .footer-tagline {
