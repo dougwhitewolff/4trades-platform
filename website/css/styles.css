@@ -204,8 +204,19 @@ section {
     color: var(--pure-white);
 }
 
+.logo-image {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
 .logo-icon {
     font-size: 28px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .nav-links {
@@ -513,12 +524,27 @@ section {
     text-align: center;
 }
 
+.stat-value {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
 .stat-number {
     font-size: 64px;
     font-weight: 800;
     color: var(--orange-primary);
     line-height: 1;
-    margin-bottom: 12px;
+}
+
+.stat-suffix {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--orange-primary);
+    line-height: 1;
+    margin-left: 4px;
 }
 
 .stat-label {
@@ -844,6 +870,10 @@ section {
 
     .stat-number {
         font-size: 48px;
+    }
+
+    .stat-suffix {
+        font-size: 36px;
     }
 
     .testimonial-grid {
