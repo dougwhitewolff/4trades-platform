@@ -308,11 +308,12 @@ section {
 
 .hero-microcopy {
     color: var(--orange-primary);
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     font-style: italic;
     margin-bottom: 24px;
     letter-spacing: 0.5px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hero-headline {
@@ -526,6 +527,12 @@ section {
     color: var(--orange-primary);
     line-height: 1;
     margin-bottom: 12px;
+}
+
+.stat-unit {
+    font-size: 64px;
+    font-weight: 800;
+    color: var(--orange-primary);
 }
 
 .stat-label {
@@ -855,6 +862,10 @@ section {
     }
 
     .stat-number {
+        font-size: 48px;
+    }
+
+    .stat-unit {
         font-size: 48px;
     }
 
