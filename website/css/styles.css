@@ -204,13 +204,19 @@ section {
     color: var(--pure-white);
 }
 
-.nav-logo .logo-image {
+.logo-image {
     height: 40px;
     width: auto;
+    display: block;
 }
 
 .logo-icon {
     font-size: 28px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .nav-links {
@@ -271,9 +277,7 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
-    background: linear-gradient(135deg, var(--charcoal-black) 0%, var(--dark-gray) 100%),
-                url('../assets/photos/Onsite_Workers.png') center/cover no-repeat;
-    background-blend-mode: overlay;
+    background: linear-gradient(135deg, var(--charcoal-black) 0%, var(--dark-gray) 100%);
     text-align: center;
     padding: 120px 24px 80px;
     overflow: hidden;
@@ -308,12 +312,11 @@ section {
 
 .hero-microcopy {
     color: var(--orange-primary);
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 400;
     font-style: italic;
     margin-bottom: 24px;
     letter-spacing: 0.5px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hero-headline {
@@ -521,18 +524,27 @@ section {
     text-align: center;
 }
 
+.stat-value {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
 .stat-number {
     font-size: 64px;
     font-weight: 800;
     color: var(--orange-primary);
     line-height: 1;
-    margin-bottom: 12px;
 }
 
-.stat-unit {
-    font-size: 64px;
+.stat-suffix {
+    font-size: 48px;
     font-weight: 800;
     color: var(--orange-primary);
+    line-height: 1;
+    margin-left: 4px;
 }
 
 .stat-label {
@@ -719,11 +731,6 @@ section {
     margin-bottom: 16px;
 }
 
-.footer-logo .logo-image {
-    height: 50px;
-    width: auto;
-}
-
 .footer-tagline {
     font-size: 18px;
     color: var(--orange-primary);
@@ -865,8 +872,8 @@ section {
         font-size: 48px;
     }
 
-    .stat-unit {
-        font-size: 48px;
+    .stat-suffix {
+        font-size: 36px;
     }
 
     .testimonial-grid {
