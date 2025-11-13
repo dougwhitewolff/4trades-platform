@@ -316,6 +316,8 @@ section {
     color: var(--orange-primary);
     font-size: 30px;
     font-weight: 600;
+    font-size: 30px;
+    font-weight: 600;
     font-style: italic;
     margin-bottom: 24px;
     letter-spacing: 0.5px;
@@ -529,6 +531,7 @@ section {
 .stat-value {
     display: flex;
     align-items: baseline; /* keeps number and suffix aligned properly */
+    align-items: baseline; /* keeps number and suffix aligned properly */
     justify-content: center;
 }
 
@@ -538,14 +541,19 @@ section {
     color: var(--orange-primary);
     line-height: 1;
     font-family: var(--font-primary);
+    font-family: var(--font-primary);
 }
 
 .stat-suffix {
     font-size: 64px;            /* match the number size */
     font-weight: 800;           /* match the number weight */
+    font-size: 64px;            /* match the number size */
+    font-weight: 800;           /* match the number weight */
     color: var(--orange-primary);
     font-family: var(--font-primary);
+    font-family: var(--font-primary);
     line-height: 1;
+    margin-left: 4px;           /* small spacing between number and % */
     margin-left: 4px;           /* small spacing between number and % */
 }
 
@@ -731,6 +739,11 @@ section {
     font-weight: 700;
     color: var(--pure-white);
     margin-bottom: 16px;
+}
+
+.footer-logo .logo-image {
+    height: 50px;
+    width: auto;
 }
 
 .footer-logo .logo-image {
