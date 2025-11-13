@@ -253,4 +253,4 @@ function debounce(func, wait) {
 // ============================================
 console.log('%c4Trades.ai', 'color: #FF7F11; font-size: 24px; font-weight: bold;');
 console.log('%cPowering the people who build.', 'color: #1C1C1C; font-size: 14px;');
-console.log('%cWebsite built with ❤️ for independent trades businesses.', 'color: #2E2E2E; font-size: 12px;');
+console.log('%cWebsite built with â¤ï¸ for independent trades businesses.', 'color: #2E2E2E; font-size: 12px;');
