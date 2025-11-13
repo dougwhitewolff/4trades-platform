@@ -149,7 +149,7 @@ Start My Setup**
 See How It Works**
 
 **Microcopy:\
-Automation built for trades, not tech companies.**
+We bhuild AI automation for the people who build everything else.**
 
 **Visual:**
 
