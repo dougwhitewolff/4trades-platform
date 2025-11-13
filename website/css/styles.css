@@ -375,6 +375,14 @@ section {
 }
 
 /* ============================================
+   What We Do Section
+   ============================================ */
+.what-we-do {
+    background-color: var(--pure-white);
+    padding: var(--section-padding) 0;
+}
+
+/* ============================================
    Challenge Section
    ============================================ */
 .challenge {
