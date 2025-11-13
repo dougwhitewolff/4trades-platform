@@ -278,7 +278,7 @@ section {
     align-items: center;
     position: relative;
     background: linear-gradient(135deg, var(--charcoal-black) 0%, var(--dark-gray) 100%),
-                url('../assets/images/Workers_16x9_edits-1.png') center/cover no-repeat;
+                url('../assets/images/Workers_16x9_blur.png') center/cover no-repeat;
     background-blend-mode: overlay;
     text-align: center;
     padding: 120px 24px 80px;
@@ -434,7 +434,7 @@ section {
 }
 
 .comparison-item ul li::before {
-    content: 'â€¢';
+    content: '•';
     position: absolute;
     left: 0;
     color: var(--orange-primary);
