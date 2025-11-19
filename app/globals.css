@@ -534,8 +534,7 @@ section {
 
 .stat-value {
     display: flex;
-    align-items: baseline; /* keeps number and suffix aligned properly */
-    align-items: baseline; /* keeps number and suffix aligned properly */
+    align-items: baseline;
     justify-content: center;
 }
 
@@ -545,20 +544,15 @@ section {
     color: var(--orange-primary);
     line-height: 1;
     font-family: var(--font-primary);
-    font-family: var(--font-primary);
 }
 
 .stat-suffix {
-    font-size: 64px;            /* match the number size */
-    font-weight: 800;           /* match the number weight */
-    font-size: 64px;            /* match the number size */
-    font-weight: 800;           /* match the number weight */
+    font-size: 64px;
+    font-weight: 800;
     color: var(--orange-primary);
     font-family: var(--font-primary);
-    font-family: var(--font-primary);
     line-height: 1;
-    margin-left: 4px;           /* small spacing between number and % */
-    margin-left: 4px;           /* small spacing between number and % */
+    margin-left: 4px;
 }
 
 .stat-label {
@@ -743,11 +737,6 @@ section {
     font-weight: 700;
     color: var(--pure-white);
     margin-bottom: 16px;
-}
-
-.footer-logo .logo-image {
-    height: 50px;
-    width: auto;
 }
 
 .footer-logo .logo-image {
