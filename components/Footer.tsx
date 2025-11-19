@@ -6,15 +6,15 @@ export default function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <div className="footer-logo">
-              <Image 
-                src="/assets/logos/4Trades_Banner_Logo.png" 
-                alt="4Trades.ai Logo" 
-                className="logo-image"
-                width={200}
-                height={50}
-              />
-            </div>
+          <div className="footer-logo">
+            <Image 
+              src="/assets/logos/4Trades_Banner_Logo.webp" 
+              alt="4Trades.ai Logo" 
+              className="logo-image"
+              width={200}
+              height={50}
+            />
+          </div>
             <p className="footer-tagline">Powering the people who build.</p>
             <p className="footer-subtext">Built for trades. Rooted in reliability. Committed to independence.</p>
           </div>

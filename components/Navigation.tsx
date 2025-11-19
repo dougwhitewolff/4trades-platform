@@ -31,7 +31,7 @@ export default function Navigation() {
       <div className="nav-container">
         <div className="nav-logo">
           <Image 
-            src="/assets/logos/4Trades_Banner_Logo.png" 
+            src="/assets/logos/4Trades_Banner_Logo.webp" 
             alt="4Trades.ai Logo" 
             className="logo-image"
             width={200}
