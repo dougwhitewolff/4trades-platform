@@ -1,0 +1,47 @@
+{
+  "name": "4trades-platform",
+  "version": "1.0.0",
+  "description": "4Trades.ai Platform - Automation and onboarding platform for independent trades businesses",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dougwhitewolff/4trades-platform.git"
+  },
+  "keywords": [
+    "4trades",
+    "trades",
+    "automation",
+    "nextjs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dougwhitewolff/4trades-platform/issues"
+  },
+  "homepage": "https://github.com/dougwhitewolff/4trades-platform#readme",
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "next": "^16.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.1",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.9.3"
+  }
+}
