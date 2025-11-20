@@ -36,11 +36,10 @@ export default function Hero() {
         }}
       >
         <h1 className="hero-headline">
-          Build. Serve.<br />Stay Independent.
+          Build. Serve. <span className="hero-headline-break">Stay Independent.</span>
         </h1>
         <p className="hero-microcopy">
-          We build AI automation<br />
-          for the people who build everything else.
+          We build AI automation for the people who build everything else.
         </p>
         <div className="hero-ctas">
           <Button asChild variant={"4trades-primary" as any} size="lg">

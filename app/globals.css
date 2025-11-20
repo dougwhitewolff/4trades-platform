@@ -478,6 +478,11 @@ section {
     letter-spacing: -0.04em;
 }
 
+.hero-headline-break::before {
+    content: '\A';
+    white-space: pre;
+}
+
 .hero-microcopy {
     color: #FFB266;
     font-size: clamp(16px, 2vw, 20px);
@@ -1133,19 +1138,37 @@ section {
         font-size: 28px;
     }
 
+    /* Fix 1: Smaller logo on mobile */
+    .logo-image {
+        height: 30px !important;
+        width: auto;
+    }
+
     .hero {
         padding: 100px 20px 60px;
         min-height: 90vh;
     }
 
+    /* Fix 2: Keep "Stay Independent" on one line */
     .hero-headline {
-        font-size: clamp(40px, 10vw, 52px) !important;
-        margin-bottom: 28px;
+        font-size: clamp(32px, 9vw, 48px) !important;
+        margin-bottom: 24px;
+        line-height: 1.15 !important;
     }
 
+    .hero-headline-break::before {
+        content: '';
+        white-space: normal;
+    }
+
+    /* Fix 3: Subheader max 2 lines */
     .hero-microcopy {
-        font-size: clamp(14px, 3.5vw, 17px) !important;
-        margin-bottom: 36px;
+        font-size: clamp(13px, 3.2vw, 16px) !important;
+        margin-bottom: 32px;
+        line-height: 1.5 !important;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-ctas {
@@ -1156,6 +1179,71 @@ section {
     .btn {
         width: 100%;
         text-align: center;
+    }
+
+    /* Fix 4: Icon beside first word */
+    .section-header-with-icon {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 12px;
+        text-align: left;
+    }
+
+    .section-header-icon {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+
+    /* Fix 5: Better font sizes for mobile fitting */
+    h2 {
+        font-size: 22px !important;
+        line-height: 1.4 !important;
+    }
+
+    .section-header {
+        padding: 0 12px;
+    }
+
+    /* Specific section font sizes for optimal mobile display */
+    .solution .section-header {
+        font-size: 20px !important;
+    }
+
+    .proof .section-header {
+        font-size: 21px !important;
+    }
+
+    .testimonials .section-header {
+        font-size: 19px !important;
+    }
+
+    .how-it-works .section-header {
+        font-size: 21px !important;
+    }
+
+    .why-matters .section-header {
+        font-size: 20px !important;
+    }
+
+    .challenge .section-header {
+        font-size: 20px !important;
+    }
+
+    /* Fix 6: Step badges closer to icons */
+    .step-number {
+        top: -5px;
+        right: -5px;
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .step-icon {
+        width: 80px;
+        height: 80px;
     }
 
     .stats {
@@ -1197,12 +1285,54 @@ section {
         padding: 0 16px;
     }
 
-    .hero-headline {
-        font-size: 32px;
+    /* Even smaller logo for very small screens */
+    .logo-image {
+        height: 28px !important;
     }
 
-    .hero-subheadline {
-        font-size: 16px;
+    /* Smaller headline for tiny screens */
+    .hero-headline {
+        font-size: clamp(28px, 8vw, 38px) !important;
+    }
+
+    .hero-microcopy {
+        font-size: clamp(12px, 3vw, 14px) !important;
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    .section-header-icon {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+        margin-top: 1px;
+    }
+
+    /* Even smaller font sizes for specific sections */
+    .solution .section-header {
+        font-size: 18px !important;
+    }
+
+    .proof .section-header {
+        font-size: 19px !important;
+    }
+
+    .testimonials .section-header {
+        font-size: 17px !important;
+    }
+
+    .how-it-works .section-header {
+        font-size: 19px !important;
+    }
+
+    .why-matters .section-header {
+        font-size: 18px !important;
+    }
+
+    .challenge .section-header {
+        font-size: 18px !important;
     }
 
     .btn {
@@ -1213,6 +1343,20 @@ section {
     .feature-card,
     .testimonial {
         padding: 24px;
+    }
+
+    /* Even closer badges on very small screens */
+    .step-number {
+        top: -3px;
+        right: -3px;
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .step-icon {
+        width: 70px;
+        height: 70px;
     }
 }
 

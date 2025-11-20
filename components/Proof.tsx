@@ -18,7 +18,7 @@ export default function Proof() {
           <svg className="section-header-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
           </svg>
-          Reliability you can <span className="text-highlight">measure.</span>
+          Reliability you can<span className="text-highlight">measure.</span>
         </h2>
         <p ref={introRef} className="section-intro">
           Our commitment to builders is simple: reliability before speed, proof before promises.
