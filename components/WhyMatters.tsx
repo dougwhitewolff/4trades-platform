@@ -1,7 +1,6 @@
 'use client';
 
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Button } from '@/components/ui/button';
 
 export default function WhyMatters() {
   const headerRef = useScrollAnimation();
@@ -10,8 +9,14 @@ export default function WhyMatters() {
   return (
     <section className="why-matters">
       <div className="container">
-        <h2 ref={headerRef} className="section-header">
-          When local builders thrive, communities do too.
+        <h2 ref={headerRef} className="section-header section-header-with-icon">
+          <svg className="section-header-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          When local builders thrive,<span className="text-highlight">communities do too.</span>
         </h2>
         <div ref={contentRef} className="why-content">
           <p>
@@ -21,13 +26,7 @@ export default function WhyMatters() {
             4Trades.ai helps the people who build our homes, fix our systems, and keep our neighborhoods running. Because when you succeed, local life stays strong.
           </p>
         </div>
-        <div className="section-cta">
-          <Button asChild variant={"4trades-primary" as any} size="lg">
-            <a href="#onboarding">Keep Your Business Local</a>
-          </Button>
-        </div>
       </div>
     </section>
   );
 }
-

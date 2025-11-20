@@ -1,12 +1,11 @@
-import { Work_Sans } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
 
-const workSans = Work_Sans({ 
+const spaceGrotesk = Space_Grotesk({ 
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  variable: '--font-work-sans',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-space-grotesk',
   display: 'swap',
-  style: ['normal', 'italic'],
 });
 
 export const metadata = {
@@ -21,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={workSans.variable}>
+    <html lang="en" className={spaceGrotesk.variable}>
       <body>{children}</body>
     </html>
   );

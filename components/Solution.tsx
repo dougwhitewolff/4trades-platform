@@ -1,7 +1,6 @@
 'use client';
 
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Button } from '@/components/ui/button';
 
 export default function Solution() {
   const headerRef = useScrollAnimation();
@@ -13,8 +12,11 @@ export default function Solution() {
   return (
     <section id="products" className="solution">
       <div className="container">
-        <h2 ref={headerRef} className="section-header">
-          Automation that works like a trusted team member.
+        <h2 ref={headerRef} className="section-header section-header-with-icon">
+          <svg className="section-header-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+          Automation that works like a <span className="text-highlight">trusted team member.</span>
         </h2>
         <p ref={introRef} className="section-intro">
           4Trades.ai helps locally owned trades businesses run like the big operations without losing what makes them personal. Our AI agents handle calls, scheduling, and follow-ups so you can stay focused on the work and your customers.
@@ -52,14 +54,7 @@ export default function Solution() {
             <p>Connects your calls, CRM, and dispatch tools so everything just works.</p>
           </div>
         </div>
-
-        <div className="section-cta">
-          <Button asChild variant={"4trades-primary" as any} size="lg">
-            <a href="#products">Explore Our Products</a>
-          </Button>
-        </div>
       </div>
     </section>
   );
 }
-

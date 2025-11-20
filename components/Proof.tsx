@@ -2,7 +2,6 @@
 
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { useStatCounter } from '@/hooks/useStatCounter';
-import { Button } from '@/components/ui/button';
 
 export default function Proof() {
   const headerRef = useScrollAnimation();
@@ -15,8 +14,11 @@ export default function Proof() {
   return (
     <section className="proof">
       <div className="container">
-        <h2 ref={headerRef} className="section-header">
-          Reliability you can measure.
+        <h2 ref={headerRef} className="section-header section-header-with-icon">
+          <svg className="section-header-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+          Reliability you can <span className="text-highlight">measure.</span>
         </h2>
         <p ref={introRef} className="section-intro">
           Our commitment to builders is simple: reliability before speed, proof before promises.
@@ -51,14 +53,7 @@ export default function Proof() {
         <p className="proof-text">
           Every 4Trades.ai customer receives transparent reliability reports and ROI summaries. Because trust is earned with evidence, not slogans.
         </p>
-
-        <div className="section-cta">
-          <Button asChild variant={"4trades-secondary-light" as any} size="lg">
-            <a href="#standards">See Reliability Standards</a>
-          </Button>
-        </div>
       </div>
     </section>
   );
 }
-

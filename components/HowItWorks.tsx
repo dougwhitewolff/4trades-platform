@@ -12,8 +12,13 @@ export default function HowItWorks() {
   return (
     <section id="how-it-works" className="how-it-works">
       <div className="container">
-        <h2 ref={headerRef} className="section-header">
-          From setup to success in three simple steps.
+        <h2 ref={headerRef} className="section-header section-header-with-icon">
+          <svg className="section-header-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+          From setup to <span className="text-highlight">success</span> in three simple steps.
         </h2>
 
         <div className="steps">
@@ -59,11 +64,10 @@ export default function HowItWorks() {
 
         <div className="section-cta">
           <Button asChild variant={"4trades-primary" as any} size="lg">
-            <a href="#onboarding">Start My Setup</a>
+            <a href="https://vasop-client.vercel.app/signup" target="_blank" rel="noopener noreferrer">Start My Setup</a>
           </Button>
         </div>
       </div>
     </section>
   );
 }
-
