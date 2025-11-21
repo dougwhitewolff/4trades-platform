@@ -29,7 +29,7 @@ export default function Navigation() {
   return (
     <nav className="nav-bar">
       <div className="nav-container">
-        <div className="nav-logo">
+        <a href="/" className="nav-logo">
           <Image 
             src="/assets/logos/4Trades_Banner_Logo.webp" 
             alt="4Trades.ai Logo" 
@@ -38,11 +38,11 @@ export default function Navigation() {
             height={40}
             priority
           />
-        </div>
+        </a>
         <div className={`nav-links ${isOpen ? 'active' : ''}`}>
-          <a href="#home" onClick={close}>Home</a>
-          <a href="#products" onClick={close}>Products</a>
-          <a href="#pricing" onClick={close}>Pricing</a>
+          <a href="/" onClick={close}>Home</a>
+          <a href="/#products" onClick={close}>Products</a>
+          <a href="/#pricing" onClick={close}>Pricing</a>
           <a href="/about" onClick={close}>About</a>
           <Button asChild variant={"4trades-primary" as any} size="default" className="nav-cta" onClick={close}>
             <a href="https://vasop-client.vercel.app/signup" target="_blank" rel="noopener noreferrer">Start My Setup</a>

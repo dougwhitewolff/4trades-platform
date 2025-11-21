@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-          <div className="footer-logo">
+          <a href="/" className="footer-logo">
             <Image 
               src="/assets/logos/4Trades_Banner_Logo.webp" 
               alt="4Trades.ai Logo" 
@@ -32,7 +32,7 @@ export default function Footer() {
               width={200}
               height={50}
             />
-          </div>
+          </a>
             <p className="footer-tagline">Powering the people who build.</p>
             <p className="footer-subtext">Built for trades. Rooted in reliability. Committed to independence.</p>
           </div>
@@ -40,9 +40,9 @@ export default function Footer() {
           <div className="footer-links">
             <div className="footer-column">
               <h4>Platform</h4>
-              <a href="#home">Home</a>
-              <a href="#products">Products</a>
-              <a href="#pricing">Pricing</a>
+              <a href="/">Home</a>
+              <a href="/#products">Products</a>
+              <a href="/#pricing">Pricing</a>
             </div>
             <div className="footer-column">
               <h4>Company</h4>

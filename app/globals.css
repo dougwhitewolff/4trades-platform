@@ -303,6 +303,8 @@ section {
     font-weight: 700;
     color: var(--pure-white);
     transition: transform 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .nav-logo:hover {
@@ -1448,6 +1450,13 @@ section {
     font-weight: 700;
     color: var(--pure-white);
     margin-bottom: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+    opacity: 0.8;
 }
 
 .footer-logo .logo-image {
