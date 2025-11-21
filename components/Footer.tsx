@@ -42,7 +42,7 @@ export default function Footer() {
               <h4>Platform</h4>
               <a href="/">Home</a>
               <a href="/#products">Products</a>
-              <a href="/#pricing">Pricing</a>
+              <a href="/pricing">Pricing</a>
             </div>
             <div className="footer-column">
               <h4>Company</h4>
