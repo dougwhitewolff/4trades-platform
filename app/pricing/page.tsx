@@ -39,7 +39,7 @@ export default function Pricing() {
               <div className="pricing-card">
                 <div className="pricing-card-header">
                   <div className="plan-icon">
-                    <Phone size={32} />
+                    <Phone size={26} />
                   </div>
                   <h3 className="plan-name">Base Plan</h3>
                   <div className="plan-price">
@@ -53,27 +53,27 @@ export default function Pricing() {
                 <div className="pricing-card-content">
                   <div className="plan-features">
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>Up to 50 billable calls per month</span>
                     </div>
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>AI-powered call handling</span>
                     </div>
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>After-hours coverage</span>
                     </div>
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>Call transcripts & summaries</span>
                     </div>
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>Custom business hours setup</span>
                     </div>
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>Basic analytics dashboard</span>
                     </div>
                   </div>
@@ -83,7 +83,7 @@ export default function Pricing() {
                     <span>$3 per call beyond 50 calls</span>
                   </div>
 
-                  <button className="plan-cta-button">Get Started</button>
+                  <a href="https://vasop-client.vercel.app/signup" className="plan-cta-button" style={{display: 'block', textDecoration: 'none', textAlign: 'center'}}>Get Started</a>
                 </div>
               </div>
 
@@ -92,7 +92,7 @@ export default function Pricing() {
                 <div className="featured-badge">Most Popular</div>
                 <div className="pricing-card-header">
                   <div className="plan-icon">
-                    <Zap size={32} />
+                    <Zap size={26} />
                   </div>
                   <h3 className="plan-name">Pro Plan</h3>
                   <div className="plan-price">
@@ -106,35 +106,35 @@ export default function Pricing() {
                 <div className="pricing-card-content">
                   <div className="plan-features">
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>Up to 100 billable calls per month</span>
                     </div>
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>AI-powered call handling</span>
                     </div>
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>After-hours coverage</span>
                     </div>
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>Call transcripts & summaries</span>
                     </div>
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>Custom business hours setup</span>
                     </div>
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>Advanced analytics & insights</span>
                     </div>
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>Priority support</span>
                     </div>
                     <div className="feature-item">
-                      <CheckCircle2 size={20} className="feature-icon" />
+                      <CheckCircle2 size={16} className="feature-icon" />
                       <span>Custom integrations</span>
                     </div>
                   </div>
@@ -144,8 +144,7 @@ export default function Pricing() {
                     <span>$3 per call beyond 100 calls</span>
                   </div>
 
-                  <button className="plan-cta-button plan-cta-featured">Get Started</button>
-                  <p className="plan-note">Coming Soon</p>
+                  <a href="https://vasop-client.vercel.app/signup" className="plan-cta-button plan-cta-featured" style={{display: 'block', textDecoration: 'none', textAlign: 'center'}}>Get Started</a>
                 </div>
               </div>
 

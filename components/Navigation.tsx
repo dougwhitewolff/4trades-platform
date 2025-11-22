@@ -45,7 +45,7 @@ export default function Navigation() {
           <a href="/pricing" onClick={close}>Pricing</a>
           <a href="/about" onClick={close}>About</a>
           <Button asChild variant={"4trades-primary" as any} size="default" className="nav-cta" onClick={close}>
-            <a href="https://vasop-client.vercel.app/signup" target="_blank" rel="noopener noreferrer">Start My Setup</a>
+            <a href="https://vasop-client.vercel.app/signup">Start My Setup</a>
           </Button>
         </div>
         <button 

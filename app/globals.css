@@ -945,7 +945,7 @@ section {
 .step-number {
     position: absolute;
     top: -10px;
-    right: -10px;
+    left: -10px;
     width: 40px;
     height: 40px;
     background-color: var(--orange-primary);
@@ -1793,7 +1793,7 @@ section {
     /* Fix 6: Step badges closer to icons */
     .step-number {
         top: -5px;
-        right: -5px;
+        left: -5px;
         width: 32px;
         height: 32px;
         font-size: 16px;
@@ -1906,7 +1906,7 @@ section {
     /* Even closer badges on very small screens */
     .step-number {
         top: -3px;
-        right: -3px;
+        left: -3px;
         width: 28px;
         height: 28px;
         font-size: 14px;
@@ -2013,6 +2013,8 @@ section {
     overflow: hidden;
     transition: all 0.4s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .pricing-card:hover {
@@ -2039,22 +2041,23 @@ section {
 }
 
 .pricing-card-header {
-    padding: 40px 32px 32px;
+    padding: 20px 24px 16px;
     text-align: center;
     background: linear-gradient(180deg, var(--off-white) 0%, var(--pure-white) 100%);
+    flex-shrink: 0;
 }
 
 .plan-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 24px;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 10px;
     background-color: var(--pure-white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--orange-primary);
-    border: 3px solid var(--orange-primary);
+    border: 2px solid var(--orange-primary);
     transition: all 0.3s ease;
 }
 
@@ -2065,102 +2068,119 @@ section {
 }
 
 .plan-name {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--charcoal-black);
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .plan-price {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .price-currency {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
     color: var(--orange-primary);
 }
 
 .price-amount {
-    font-size: 64px;
+    font-size: 44px;
     font-weight: 800;
     color: var(--orange-primary);
     line-height: 1;
 }
 
 .price-period {
-    font-size: 18px;
+    font-size: 15px;
     color: var(--dark-gray);
     margin-left: 4px;
 }
 
 .plan-description {
-    font-size: 15px;
+    font-size: 13px;
     color: var(--dark-gray);
-    line-height: 1.6;
+    line-height: 1.35;
     margin: 0;
 }
 
 .pricing-card-content {
-    padding: 32px;
+    padding: 16px 24px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .plan-features {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-bottom: 24px;
+    gap: 4px;
+    margin-bottom: 14px;
+    flex: 1;
 }
 
 .feature-item {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
-    font-size: 15px;
+    gap: 10px;
+    font-size: 13px;
     color: var(--dark-gray);
+    line-height: 1.4;
+}
+
+.feature-item span {
+    flex: 1;
 }
 
 .feature-icon {
     color: var(--orange-primary);
     flex-shrink: 0;
     margin-top: 2px;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
 }
 
 .plan-overage {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 16px;
+    gap: 8px;
+    padding: 10px 12px;
     background-color: rgba(255, 127, 17, 0.05);
     border-left: 3px solid var(--orange-primary);
     border-radius: 6px;
-    margin-bottom: 24px;
-    font-size: 14px;
+    margin-bottom: 14px;
+    margin-top: auto;
+    font-size: 12px;
     color: var(--dark-gray);
     font-weight: 500;
+    line-height: 1.3;
 }
 
 .plan-overage svg {
     color: var(--orange-primary);
     flex-shrink: 0;
+    width: 14px;
+    height: 14px;
 }
 
 .plan-cta-button {
     width: 100%;
-    padding: 16px 32px;
+    padding: 13px 28px;
     background-color: var(--orange-primary);
     color: var(--pure-white);
     border: none;
-    border-radius: 12px;
-    font-size: 16px;
+    border-radius: 10px;
+    font-size: 15px;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    margin-top: 0;
 }
 
 .plan-cta-button:hover {
@@ -2175,8 +2195,8 @@ section {
 
 .plan-note {
     text-align: center;
-    margin-top: 12px;
-    font-size: 13px;
+    margin-top: 10px;
+    font-size: 12px;
     color: var(--dark-gray);
     font-style: italic;
 }
@@ -2332,13 +2352,13 @@ section {
     gap: 20px;
     align-items: flex-start;
     padding: 32px;
-    background: linear-gradient(135deg, rgba(255, 127, 17, 0.05), rgba(255, 127, 17, 0.1));
-    border-left: 4px solid var(--orange-primary);
+    background: linear-gradient(135deg, rgba(144, 238, 144, 0.2), rgba(152, 251, 152, 0.25));
+    border-left: 4px solid #4CAF50;
     border-radius: 8px;
 }
 
 .billable-guarantee svg {
-    color: var(--orange-primary);
+    color: #4CAF50;
     flex-shrink: 0;
 }
 
