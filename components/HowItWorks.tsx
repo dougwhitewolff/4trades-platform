@@ -64,7 +64,7 @@ export default function HowItWorks() {
 
         <div className="section-cta">
           <Button asChild variant={"4trades-primary" as any} size="lg">
-            <a href="https://vasop-client.vercel.app/signup">Start My Setup</a>
+            <a href="https://onboardingaha.4trades.ai/signup">Start My Setup</a>
           </Button>
         </div>
       </div>

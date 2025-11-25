@@ -43,7 +43,7 @@ export default function Hero() {
         </p>
         <div className="hero-ctas">
           <Button asChild variant={"4trades-primary" as any} size="lg">
-            <a href="https://vasop-client.vercel.app/signup">Start My Setup</a>
+            <a href="https://onboardingaha.4trades.ai/signup">Start My Setup</a>
           </Button>
           <Button asChild variant={"4trades-secondary" as any} size="lg">
             <a href="#how-it-works">See How It Works</a>

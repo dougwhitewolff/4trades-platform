@@ -83,7 +83,7 @@ export default function Pricing() {
                     <span>$3 per call beyond 50 calls</span>
                   </div>
 
-                  <a href="https://vasop-client.vercel.app/signup" className="plan-cta-button" style={{display: 'block', textDecoration: 'none', textAlign: 'center'}}>Get Started</a>
+                  <a href="https://onboardingaha.4trades.ai/signup" className="plan-cta-button" style={{display: 'block', textDecoration: 'none', textAlign: 'center'}}>Get Started</a>
                 </div>
               </div>
 
@@ -144,7 +144,7 @@ export default function Pricing() {
                     <span>$3 per call beyond 100 calls</span>
                   </div>
 
-                  <a href="https://vasop-client.vercel.app/signup" className="plan-cta-button plan-cta-featured" style={{display: 'block', textDecoration: 'none', textAlign: 'center'}}>Get Started</a>
+                  <a href="https://onboardingaha.4trades.ai/signup" className="plan-cta-button plan-cta-featured" style={{display: 'block', textDecoration: 'none', textAlign: 'center'}}>Get Started</a>
                 </div>
               </div>
 
@@ -298,7 +298,7 @@ export default function Pricing() {
             <div className="pricing-cta-content">
               <h2>Ready to Get Started?</h2>
               <p>Join trade businesses who never miss an after-hours call again.</p>
-              <a href="https://vasop-client.vercel.app/signup" className="pricing-cta-button-large">
+              <a href="https://onboardingaha.4trades.ai/signup" className="pricing-cta-button-large">
                 Start My Setup
               </a>
               <p className="pricing-cta-note">No credit card required to get started</p>
