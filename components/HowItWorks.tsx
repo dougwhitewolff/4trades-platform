@@ -32,7 +32,7 @@ export default function HowItWorks() {
             </div>
             <div className="step-number">1</div>
             <h3>Start Your Setup</h3>
-            <p>Enter your business details and hours takes less than ten minutes.</p>
+            <p>Enter your business details and hours in under ten minutes.</p>
           </div>
 
           <div ref={step2Ref} className="step">
@@ -46,7 +46,7 @@ export default function HowItWorks() {
             </div>
             <div className="step-number">2</div>
             <h3>Hear Your Agent</h3>
-            <p>We'll show you exactly what your callers experience before you go live.</p>
+            <p>Hear exactly what your callers will experience before you go live.</p>
           </div>
 
           <div ref={step3Ref} className="step">
@@ -57,8 +57,8 @@ export default function HowItWorks() {
               </svg>
             </div>
             <div className="step-number">3</div>
-            <h3>Activate and Relax</h3>
-            <p>Your agent starts answering calls, logging leads, and sending instant summaries.</p>
+            <h3>Activate with Confidence</h3>
+            <p>Your agent answers calls and emails you a clear summary right away.</p>
           </div>
         </div>
 

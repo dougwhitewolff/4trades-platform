@@ -83,7 +83,7 @@ export default function Pricing() {
                     <span>$3 per call beyond 50 calls</span>
                   </div>
 
-                  <a href="https://onboardingaha.4trades.ai/signup" className="plan-cta-button" style={{display: 'block', textDecoration: 'none', textAlign: 'center'}}>Get Started</a>
+                  <a href="https://onboardingaha.4trades.ai/signup" className="plan-cta-button" style={{display: 'block', textDecoration: 'none', textAlign: 'center'}}>Start My Setup</a>
                 </div>
               </div>
 
@@ -135,7 +135,7 @@ export default function Pricing() {
                     </div>
                     <div className="feature-item">
                       <CheckCircle2 size={16} className="feature-icon" />
-                      <span>Custom integrations</span>
+                      <span>CRM integrations</span>
                     </div>
                   </div>
                   
@@ -144,7 +144,7 @@ export default function Pricing() {
                     <span>$3 per call beyond 100 calls</span>
                   </div>
 
-                  <a href="https://onboardingaha.4trades.ai/signup" className="plan-cta-button plan-cta-featured" style={{display: 'block', textDecoration: 'none', textAlign: 'center'}}>Get Started</a>
+                  <a href="https://onboardingaha.4trades.ai/signup" className="plan-cta-button plan-cta-featured" style={{display: 'block', textDecoration: 'none', textAlign: 'center'}}>Start My Setup</a>
                 </div>
               </div>
 

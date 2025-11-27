@@ -36,7 +36,7 @@ export default function Proof() {
           <div className="stat" ref={cost.ref}>
             <div className="stat-value">
               <span className="stat-number">{cost.value}</span>
-              <span className="stat-suffix">%</span>
+              <span className="stat-suffix">%+</span>
             </div>
             <div className="stat-label">lower cost</div>
           </div>

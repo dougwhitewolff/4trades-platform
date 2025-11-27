@@ -20,10 +20,10 @@ export default function WhyMatters() {
         </h2>
         <div ref={contentRef} className="why-content">
           <p>
-            Every small trades business that stays independent keeps money, mentorship, and craftsmanship in the community. Our mission is to make sure technology strengthens not replaces that independence.
+          Every local trades business that stays independent keeps money, mentorship, and craftsmanship in the community. That independence deserves tools that help it thrive. 
           </p>
           <p>
-            4Trades.ai helps the people who build our homes, fix our systems, and keep our neighborhoods running. Because when you succeed, local life stays strong.
+          4Trades.ai helps the people who build our homes, fix our systems, and keep our neighborhoods running. Your success strengthens the people and places you serve every day. 
           </p>
         </div>
       </div>
