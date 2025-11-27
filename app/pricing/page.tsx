@@ -1,3 +1,5 @@
+'use client';
+
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { 
@@ -10,10 +12,16 @@ import {
   Zap,
   TrendingUp,
   AlertCircle,
-  CheckCircle2
+  CheckCircle2,
+  MessageSquare,
+  Briefcase,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
+import { useState } from 'react';
 
 export default function Pricing() {
+  const [ahaDetailsOpen, setAhaDetailsOpen] = useState(false);
   return (
     <>
       <Navigation />
@@ -33,6 +41,10 @@ export default function Pricing() {
         {/* Pricing Cards Section */}
         <section className="pricing-plans-section">
           <div className="container">
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px', marginBottom: '48px', flexWrap: 'wrap' }}>
+              <Phone size={40} style={{ color: 'var(--orange-primary)' }} />
+              <h2 style={{ textAlign: 'center', fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 700, color: 'var(--charcoal-black)', margin: 0 }}>After Hours Automation</h2>
+            </div>
             <div className="pricing-cards-grid">
               
               {/* Base Plan */}
@@ -149,9 +161,178 @@ export default function Pricing() {
               </div>
 
             </div>
+
+            {/* FECA Section */}
+            <div style={{ marginTop: '80px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px', marginBottom: '48px', flexWrap: 'wrap' }}>
+                <MessageSquare size={40} style={{ color: 'var(--orange-primary)' }} />
+                <h2 style={{ textAlign: 'center', fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 700, color: 'var(--charcoal-black)', margin: 0 }}>Field Estimate Communication Automation</h2>
+              </div>
+              
+              <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+                <div className="pricing-card">
+                  <div className="pricing-card-header">
+                    <div className="plan-icon">
+                      <MessageSquare size={26} />
+                    </div>
+                    <h3 className="plan-name">FECA</h3>
+                    <div className="plan-price">
+                      <span className="price-currency">$</span>
+                      <span className="price-amount">75</span>
+                      <span className="price-period">/month</span>
+                    </div>
+                    <p className="plan-description">Automate the four customer touchpoints that matter most in the estimate workflow</p>
+                  </div>
+                  
+                  <div className="pricing-card-content">
+                    <div className="plan-features">
+                      <div className="feature-item">
+                        <CheckCircle2 size={16} className="feature-icon" />
+                        <div style={{ flex: 1 }}>
+                          <span>Automations included:</span>
+                          <div className="feature-sub-items">
+                            <div className="feature-sub-item">
+                              <span>First-contact follow-up</span>
+                            </div>
+                            <div className="feature-sub-item">
+                              <span>Appointment confirmations</span>
+                            </div>
+                            <div className="feature-sub-item">
+                              <span>Day-before reminders</span>
+                            </div>
+                            <div className="feature-sub-item">
+                              <span>"On my way" ETA messages</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="feature-item">
+                        <CheckCircle2 size={16} className="feature-icon" />
+                        <span>CRM status–triggered automations</span>
+                      </div>
+                      <div className="feature-item">
+                        <CheckCircle2 size={16} className="feature-icon" />
+                        <span>SMS and/or email delivery</span>
+                      </div>
+                      <div className="feature-item">
+                        <CheckCircle2 size={16} className="feature-icon" />
+                        <span>Delivery logs for reliability tracking</span>
+                      </div>
+                    </div>
+
+                    <a href="https://outlook.office.com/bookwithme/user/e2ed1e4e7bb54691ac49fade11982ef0@transformationmath.com/meetingtype/SGTMMjpTQkSbx5Ej5et8Rw2?anonymous&ismsaljsauthenabled&ep=mlink" className="plan-cta-button" style={{display: 'block', textDecoration: 'none', textAlign: 'center'}}>Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* GROUNDWORK Section */}
+            <div style={{ marginTop: '80px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px', marginBottom: '48px', flexWrap: 'wrap' }}>
+                <Briefcase size={40} style={{ color: 'var(--orange-primary)' }} />
+                <h2 style={{ textAlign: 'center', fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 700, color: 'var(--charcoal-black)', margin: 0 }}>GROUNDWORK Consulting Package</h2>
+              </div>
+              
+              <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+                <div className="pricing-card">
+                  <div className="pricing-card-header">
+                    <div className="plan-icon">
+                      <Briefcase size={26} />
+                    </div>
+                    <h3 className="plan-name">GROUNDWORK</h3>
+                    <div className="plan-price">
+                      <span className="price-currency">$</span>
+                      <span className="price-amount">2,500</span>
+                    </div>
+                    <p className="plan-description" style={{ marginTop: '8px' }}>Free 15-minute exploratory call, then $2,500 - A structured two-week engagement that maps your operations, aligns your workflows, and sets up your highest-impact systems</p>
+                  </div>
+                  
+                  <div className="pricing-card-content">
+                    <div className="plan-features">
+                      <div className="feature-item">
+                        <CheckCircle2 size={16} className="feature-icon" />
+                        <span>Review of your operations, utilization patterns, and core needs</span>
+                      </div>
+                      <div className="feature-item">
+                        <CheckCircle2 size={16} className="feature-icon" />
+                        <span>One hour discovery session with owner and/or key team members</span>
+                      </div>
+                      <div className="feature-item">
+                        <CheckCircle2 size={16} className="feature-icon" />
+                        <span>Workflow mapping for lead intake, scheduling, estimating, and follow-up</span>
+                      </div>
+                      <div className="feature-item">
+                        <CheckCircle2 size={16} className="feature-icon" />
+                        <span>FECA automations</span>
+                      </div>
+                      <div className="feature-item">
+                        <CheckCircle2 size={16} className="feature-icon" />
+                        <span>Tool alignment (Salesforce, Bolster, DocuSign, Calendly, etc.)</span>
+                      </div>
+                      <div className="feature-item">
+                        <CheckCircle2 size={16} className="feature-icon" />
+                        <span>Clear written plan with recommendations for next-step automations</span>
+                      </div>
+                      <div className="feature-item">
+                        <CheckCircle2 size={16} className="feature-icon" />
+                        <span>Two-hour training session for your team</span>
+                      </div>
+                    </div>
+                    
+                    <div className="plan-overage">
+                      <AlertCircle size={18} />
+                      <span>Note: FECA setup is included in GROUNDWORK. Ongoing FECA automation requires a $75/month subscription.</span>
+                    </div>
+
+                    <a href="https://outlook.office.com/bookwithme/user/e2ed1e4e7bb54691ac49fade11982ef0@transformationmath.com/meetingtype/UF9TPtgrmEK2TxfTiJ9oiw2?anonymous&ismsaljsauthenabled&ep=mlink" className="plan-cta-button" style={{display: 'block', textDecoration: 'none', textAlign: 'center'}}>Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </section>
 
+        {/* Collapsible AHA Details Section */}
+        <section style={{ padding: '40px 0', backgroundColor: 'var(--off-white)' }}>
+          <div className="container">
+            <button
+              onClick={() => setAhaDetailsOpen(!ahaDetailsOpen)}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '12px',
+                width: '100%',
+                maxWidth: '600px',
+                margin: '0 auto',
+                padding: '20px 32px',
+                backgroundColor: 'var(--pure-white)',
+                border: '2px solid var(--orange-primary)',
+                borderRadius: '12px',
+                fontSize: '20px',
+                fontWeight: 700,
+                color: 'var(--charcoal-black)',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'var(--orange-primary)';
+                e.currentTarget.style.color = 'var(--pure-white)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'var(--pure-white)';
+                e.currentTarget.style.color = 'var(--charcoal-black)';
+              }}
+            >
+              <span>See AHA Pricing Details</span>
+              {ahaDetailsOpen ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
+            </button>
+          </div>
+        </section>
+
+        {ahaDetailsOpen && (
+          <>
         {/* Billable Calls Section */}
         <section className="billable-calls-section">
           <div className="container">
@@ -291,6 +472,8 @@ export default function Pricing() {
             </div>
           </div>
         </section>
+          </>
+        )}
 
         {/* CTA Section */}
         <section className="pricing-cta-section">

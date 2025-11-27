@@ -2117,7 +2117,7 @@ section {
 .plan-features {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 1px;
     margin-bottom: 14px;
     flex: 1;
 }
@@ -2142,6 +2142,31 @@ section {
     width: 16px;
     height: 16px;
     min-width: 16px;
+}
+
+.feature-sub-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 26px;
+    margin-top: 4px;
+}
+
+.feature-sub-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--dark-gray);
+    line-height: 1.4;
+}
+
+.feature-sub-item::before {
+    content: '•';
+    color: var(--orange-primary);
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 1px;
 }
 
 .plan-overage {
