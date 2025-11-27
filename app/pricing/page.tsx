@@ -343,7 +343,7 @@ export default function Pricing() {
               </div>
               
               <p className="billable-intro">
-                We believe in fair, transparent billing. You only pay for legitimate calls that provide value to your business.
+              We keep billing simple and fair. You only pay for real customer conversations. We filter out spam, wrong numbers, accidental forwards, and any system issues so you’re never charged for noise. 
               </p>
 
               <div className="billable-grid">
@@ -361,7 +361,7 @@ export default function Pricing() {
                       <Clock size={20} />
                       <div>
                         <strong>Duration ≥ 30 seconds</strong>
-                        <p>Ensures the call was a genuine interaction</p>
+                        <p>Shows the caller stayed long enough for it to be a real conversation</p>
                       </div>
                     </li>
                     <li>
@@ -375,7 +375,7 @@ export default function Pricing() {
                       <CheckCircle2 size={20} />
                       <div>
                         <strong>Successfully Connected</strong>
-                        <p>AI agent successfully handled the call</p>
+                        <p>Your agent answered and handled the call normally</p>
                       </div>
                     </li>
                   </ul>
@@ -408,8 +408,8 @@ export default function Pricing() {
                     <li>
                       <AlertCircle size={20} />
                       <div>
-                        <strong>System/Technical Failure</strong>
-                        <p>Any technical issues on our end</p>
+                        <strong>Call didn’t complete properly</strong>
+                        <p>If the call can’t be completed for any reason, it’s not billable</p>
                       </div>
                     </li>
                   </ul>
@@ -421,20 +421,21 @@ export default function Pricing() {
                 <div>
                   <h4>Our Guarantee</h4>
                   <p>
-                    We filter out spam, misdials, and technical issues automatically. 
-                    You only pay for real, valuable interactions with your customers.
+                  You are never charged for spam, wrong numbers, short hangups, or calls that don’t complete. Only real customer conversations count toward your plan.  
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+          </>
+        )}
 
         {/* Value Proposition Section */}
         <section className="pricing-value-section">
           <div className="container">
             <div className="pricing-value-header">
-              <h2>Why Our Pricing Makes Sense</h2>
+              <h2>Honest Pricing for Independent Trades</h2>
             </div>
             
             <div className="value-cards-grid">
@@ -451,36 +452,26 @@ export default function Pricing() {
                   <TrendingUp size={28} />
                 </div>
                 <h4>Scales With You</h4>
-                <p>Start small and grow. Our pricing grows with your business without requiring plan changes.</p>
+                <p>Grow at your own pace. Your pricing adjusts with your call volume, not with plan changes or pressure to upgrade.</p>
               </div>
 
               <div className="value-card">
                 <div className="value-card-icon">
                   <Shield size={28} />
                 </div>
-                <h4>Fair & Transparent</h4>
-                <p>We filter out junk calls automatically. You only pay for legitimate customer interactions.</p>
-              </div>
-
-              <div className="value-card">
-                <div className="value-card-icon">
-                  <Clock size={28} />
-                </div>
-                <h4>Save Time & Money</h4>
-                <p>Compared to hiring staff or missing calls, our pricing delivers exceptional ROI.</p>
+                <h4>Beats the Alternatives</h4>
+                <p>Most customers don't leave voicemails. Call centers answer, but they don't know your business.</p>
               </div>
             </div>
           </div>
         </section>
-          </>
-        )}
 
         {/* CTA Section */}
         <section className="pricing-cta-section">
           <div className="container">
             <div className="pricing-cta-content">
               <h2>Ready to Get Started?</h2>
-              <p>Join trade businesses who never miss an after-hours call again.</p>
+              <p>Protect your evenings while keeping your business responsive.</p>
               <a href="https://onboardingaha.4trades.ai/signup" className="pricing-cta-button-large">
                 Start My Setup
               </a>
