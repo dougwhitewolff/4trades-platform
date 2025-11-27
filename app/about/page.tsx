@@ -12,7 +12,10 @@ import {
   Shield,
   Zap,
   Eye,
-  Award
+  Award,
+  Phone,
+  MessageSquare,
+  Briefcase
 } from 'lucide-react';
 
 export default function About() {
@@ -24,9 +27,9 @@ export default function About() {
         <section className="about-hero">
           <div className="container">
             <div className="about-hero-content">
-              <h1 className="about-hero-title">About 4Trades.ai</h1>
+              <h1 className="about-hero-title">Why 4Trades.ai Exists</h1>
               <p className="about-hero-subtitle">
-                Building the Future of Trades Work, One Intelligent System at a Time.
+                To Support Independent Trades Businesses So They Can Stay Local & Thrive
               </p>
             </div>
           </div>
@@ -45,25 +48,39 @@ export default function About() {
                   4Trades.ai was born from a simple but powerful question:
                 </p>
                 <p className="about-question-highlight">
-                  "What would happen if trade businesses no longer had to carry the weight of endless admin, communication gaps, and operational bottlenecks?"
+                  "What can I do to strengthen the trades that keep our communities running and our local economy healthy?"
                 </p>
                 <p>
-                  We grew up around tradespeople. We saw the late-night quoting, the constant phone calls, the missed opportunities, the stress that steals time from family and growth. We saw talented people forced into repetitive, manual, low-value tasks.
-                </p>
-                <p>And we knew technology could change that.</p>
-                <p>
-                  So we set out with a clear mission — to build intelligent systems that lighten the load and allow trade businesses to operate with clarity, confidence, and calm.
+                  I grew up in Rainier, Oregon, in a family where work meant something, not a title, but the willingness to do things the right way. My dad used to say, "If you're not going to do it right, don't do it at all." That shaped how I see integrity, effort, and honoring the work in front of you.
                 </p>
                 <p>
-                  Today, 4Trades.ai is a specialized AI automation company built exclusively for the trades. We design tools that think, communicate, and work intelligently — so your team can focus on what truly matters: doing great work and growing your business.
+                  As an adult, I always found myself talking with the tradespeople who came to work on my home: electricians, HVAC techs, fence builders, plumbers. Even though my background is in technology and education, I've always felt more at ease with people who work with their hands. There's a clarity and straightforwardness in the trades that I've always respected.
+                </p>
+                <p>
+                  At the same time, I was working with business tools and software and kept wondering how small businesses were supposed to make any of it work. Even with my experience, it took hours to understand how these tools fit together. If it was frustrating for me, it had to be overwhelming for others.
+                </p>
+                <p>So I asked trades workers about the systems they used. The answers were always the same:</p>
+                <p style={{ fontStyle: 'italic', paddingLeft: '20px' }}>
+                  "We wish we were using this better."<br/>
+                  "We don't have time to set it up."<br/>
+                  "It feels like one more thing to manage."
+                </p>
+                <p>
+                  The turning point came in 2025, after joining the Lake Oswego Chamber of Commerce and meeting trades owners face-to-face. One conversation with a local fence and construction company owner made it undeniable how hard they were trying to adopt technology, and how little the tools were doing to support them. That moment made the opportunity unmistakable.
+                </p>
+                <p>
+                  I brought together developers who shared my values and we started building tools for the people I've always resonated with most: hardworking trades professionals who show up every day with integrity, skill, and pride in their craft.
+                </p>
+                <p>
+                  Today, that work continues through 4Trades.ai, designing simple, reliable systems that lighten the load, reduce friction, and help independent trades businesses stay local, strong, and thriving.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Our Purpose Section */}
-        <section className="about-section about-section-alt">
+        {/* Commented out for now - Our Purpose Section */}
+        {/* <section className="about-section about-section-alt">
           <div className="container">
             <div className="about-content-block">
               <div className="about-icon-header">
@@ -86,10 +103,10 @@ export default function About() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* What We Do Section */}
-        <section className="about-section">
+        {/* Commented out for now - What We Do Section */}
+        {/* <section className="about-section">
           <div className="container">
             <div className="about-content-block">
               <div className="about-icon-header">
@@ -150,10 +167,10 @@ export default function About() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* Our Philosophy Section */}
-        <section className="about-section about-section-alt">
+        {/* Commented out for now - Our Philosophy Section */}
+        {/* <section className="about-section about-section-alt">
           <div className="container">
             <div className="about-content-block">
               <div className="about-icon-header">
@@ -210,10 +227,10 @@ export default function About() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* Our Vision Section */}
-        <section className="about-section">
+        {/* Commented out for now - Our Vision Section */}
+        {/* <section className="about-section">
           <div className="container">
             <div className="about-content-block">
               <div className="about-icon-header">
@@ -255,10 +272,10 @@ export default function About() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* Why Choose Us Section */}
-        <section className="about-section about-section-alt">
+        {/* Commented out for now - Why Choose Us Section */}
+        {/* <section className="about-section about-section-alt">
           <div className="container">
             <div className="about-content-block">
               <div className="about-icon-header">
@@ -302,10 +319,10 @@ export default function About() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* The Heart Section */}
-        <section className="about-section about-heart-section">
+        {/* Commented out for now - The Heart Section */}
+        {/* <section className="about-section about-heart-section">
           <div className="container">
             <div className="about-content-block">
               <div className="about-icon-header">
@@ -322,6 +339,50 @@ export default function About() {
                 <p className="about-closing-statement">
                   And we're honored to build that future with you.
                 </p>
+              </div>
+            </div>
+          </div>
+        </section> */}
+
+        {/* What's Your Bottleneck Section */}
+        <section className="about-section">
+          <div className="container">
+            <div className="about-content-block">
+              <div className="about-icon-header">
+                <Target size={48} className="about-section-icon" />
+                <h2>What's Your Bottleneck?</h2>
+              </div>
+              <p style={{ textAlign: 'center', fontSize: '18px', marginBottom: '40px', color: 'var(--dark-gray)' }}>
+                Choose the problem you need to solve first:
+              </p>
+              
+              <div className="about-solutions-grid">
+                <div className="about-solution-card">
+                  <div className="solution-card-icon">
+                    <Phone size={28} />
+                  </div>
+                  <h4>Missing Calls After Hours?</h4>
+                  <p>Our After Hours Agent answers calls, captures leads, and schedules estimates when your team isn't available. Fully deployed and ready to go.</p>
+                  <a href="https://onboardingaha.4trades.ai/signup" className="btn btn-primary" style={{ textDecoration: 'none' }}>Start Using AHA</a>
+                </div>
+
+                <div className="about-solution-card">
+                  <div className="solution-card-icon">
+                    <MessageSquare size={28} />
+                  </div>
+                  <h4>Estimates Taking Too Long?</h4>
+                  <p>FECA automates follow-up with homeowners throughout your estimate process. We'll configure it to work with your CRM and workflow. Let's talk through your setup.</p>
+                  <a href="https://outlook.office.com/bookwithme/user/e2ed1e4e7bb54691ac49fade11982ef0@transformationmath.com/meetingtype/SGTMMjpTQkSbx5Ej5et8Rw2?anonymous&ismsaljsauthenabled&ep=mlink" className="btn btn-primary" style={{ textDecoration: 'none' }}>Schedule Discovery Call</a>
+                </div>
+
+                <div className="about-solution-card">
+                  <div className="solution-card-icon">
+                    <Briefcase size={28} />
+                  </div>
+                  <h4>Tools Not Talking to Each Other?</h4>
+                  <p>GROUNDWORK starts with mapping your actual workflow — calls, estimates, CRM, tasks. Then we build the automation to connect everything. No obligation, just clarity.</p>
+                  <a href="https://outlook.office.com/bookwithme/user/e2ed1e4e7bb54691ac49fade11982ef0@transformationmath.com/meetingtype/UF9TPtgrmEK2TxfTiJ9oiw2?anonymous&ismsaljsauthenabled&ep=mlink" className="btn btn-primary" style={{ textDecoration: 'none' }}>Book Workflow Session</a>
+                </div>
               </div>
             </div>
           </div>
