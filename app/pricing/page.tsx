@@ -230,7 +230,7 @@ export default function Pricing() {
             <div style={{ marginTop: '80px' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px', marginBottom: '48px', flexWrap: 'wrap' }}>
                 <Briefcase size={40} style={{ color: 'var(--orange-primary)' }} />
-                <h2 style={{ textAlign: 'center', fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 700, color: 'var(--charcoal-black)', margin: 0 }}>GROUNDWORK Consulting Package</h2>
+                <h2 style={{ textAlign: 'center', fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 700, color: 'var(--charcoal-black)', margin: 0 }}>GROUNDWORK Operational Setup & Workflow Optimization</h2>
               </div>
               
               <div style={{ maxWidth: '800px', margin: '0 auto' }}>
