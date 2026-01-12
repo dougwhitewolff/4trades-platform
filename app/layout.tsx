@@ -25,7 +25,8 @@ export default function RootLayout({
       <body>
         {children}
         
-        {/* Tawk.to Live Chat Widget */}
+        {/* Tawk.to Live Chat Widget - DISABLED */}
+        {/* 
         <Script
           id="tawk-to-chat"
           strategy="lazyOnload"
@@ -43,6 +44,7 @@ export default function RootLayout({
             `,
           }}
         />
+        */}
       </body>
     </html>
   );
